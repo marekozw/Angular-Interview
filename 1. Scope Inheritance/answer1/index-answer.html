@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Gists</title>
+</head>
+<body>
+    
+<div ng-app="app" ng-controller="ParentCtrl as parent">
+  <p>Parent Value: {{ parent.variable }}</p>
+  <div ng-controller="ChildCtrl as child">
+    <p>Child Value: {{ parent.variable }}</p>
+    <input ng-model="parent.variable"></input>
+  </div>
+</div>
+
+    <script src="../angular.js"></script>
+    <script src="app-answer.js"></script>
+</body>
+</html>

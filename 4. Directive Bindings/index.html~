@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .score-board button {
+      width: 150px;
+      height: 70px;
+    }
+    .score-board button:first-child {
+      margin-right: 5px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Angular Gists</title>
+</head>
+<body>
+    
+<div ng-app="app" ng-controller="BoardCtrl as board">
+  <h3>Score: {{ board.score }}</h3>
+  
+  <score-board
+    score-board-on-add=""
+    score-board-on-subtract="">
+  </score-board>
+  
+</div>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
